@@ -70,6 +70,9 @@ header {
 
 main {
     width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section.home {
@@ -106,4 +109,59 @@ section.home .content button {
     font-size: 2.2rem;
 
     cursor: pointer;
+}
+
+section#about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+section#about h2 {
+    font-weight: 600;
+    font-size: 4.8rem;
+}
+
+section#about h2 {
+    font-size: 2.2rem;
+}
+
+section#about .content-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#about .content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#about .content ul {
+    list-style: url(assets/check.svg);
+    margin-right: 20rem;
+}
+
+section#about .content ul li {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-left: 3rem;
+}
+
+section#about .content button {
+    background: #C21E6F;
+    padding: 2.2rem 2.4rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 2.2rem;
+
+    width: 27rem;
 }

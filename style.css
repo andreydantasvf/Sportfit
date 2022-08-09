@@ -31,6 +31,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 2.9rem;
+
+    margin-bottom: 4rem;
 }
 
 .logo {
@@ -70,4 +72,41 @@ header {
 
 main {
     width: 87%;
+}
+
+section.home {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+section.home .content {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+section.home .content h1{
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 10rem;
+}
+
+section.home .content p {
+    color: #efede8a6;
+}
+
+section.home .content button {
+    width: 19rem;
+    height: 7.8rem;
+    padding: 2.4rem 2.5rem;
+    border-radius: 1rem;
+
+    background: #C21E6F;
+    color: #FFF;
+    font-size: 2.2rem;
+
+    cursor: pointer;
 }

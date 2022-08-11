@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
+/* ----------- RESET CSS ----------------*/
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +8,12 @@
     text-decoration: none;
 }
 
+/* ----------- SET 1rem == 10px ----------------*/
 :root {
     font-size: 62.5%;
 }
 
+/* ----------- CONFIG BODY ----------------*/
 body {
     background: #171717;
     font-size: 1.6rem;
@@ -24,6 +27,29 @@ body {
     height: 100vh;
 }
 
+/* ----------- GLOBALS CLASSES ----------------*/
+.title-text {
+    font-weight: 600;
+    font-size: 4.8rem;
+}
+
+.paragraph-text {
+    font-size: 2.2rem;
+}
+
+.button {
+    background: #C21E6F;
+    border-radius: 1rem;
+    border: none;
+    padding: 2.4rem 2.5rem;
+
+    color: #FFF;
+    font-size: 2.2rem;
+
+    cursor: pointer;
+}
+
+/* ----------- HEADER----------------*/
 header {
     width: 90%;
 
@@ -68,6 +94,7 @@ header {
     transition: .5s;
 }
 
+/* ----------- CONFIG MAIN CONTENT ----------------*/
 main {
     width: 87%;
     display: flex;
@@ -75,6 +102,7 @@ main {
     align-items: center;
 }
 
+/* ----------- SECTION HOME ----------------*/
 section.home {
     display: flex;
     align-items: center;
@@ -101,33 +129,26 @@ section.home .content p {
 section.home .content button {
     width: 19rem;
     height: 7.8rem;
-    padding: 2.4rem 2.5rem;
-    border-radius: 1rem;
-
-    background: #C21E6F;
-    color: #FFF;
-    font-size: 2.2rem;
-
-    cursor: pointer;
 }
 
-section#about {
+/* ----------- CONFIG SECTIONS ----------------*/
+section#about,
+section#plans,
+section#trainers,
+section#see-more,
+section#contact,
+section#localization {
     width: 80%;
+    padding-top: 2.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+
+    margin-top: 10rem;
 }
 
-section#about h2 {
-    font-weight: 600;
-    font-size: 4.8rem;
-}
-
-section#about h2 {
-    font-size: 2.2rem;
-}
-
+/* ----------- SECTION ABOUT ----------------*/
 section#about .content-img {
     width: 100%;
     display: flex;
@@ -155,13 +176,128 @@ section#about .content ul li {
 }
 
 section#about .content button {
-    background: #C21E6F;
-    padding: 2.2rem 2.4rem;
-    border-radius: 1rem;
-    border: none;
-    cursor: pointer;
-    color: #FFF;
-    font-size: 2.2rem;
-
     width: 27rem;
+}
+
+/* ----------- SECTION PLANS ----------------*/
+section#plans .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#plans .content .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+section#plans .content .text-content button {
+    width: 27rem;
+}
+
+/* ----------- SECTION TRAINERS ----------------*/
+section#trainers .content {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+section#trainers .content .trainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+section#trainers button {
+    width: 60rem;
+    text-transform: uppercase;
+}
+
+/* ----------- SECTION SEE-MORE ----------------*/
+section#see-more .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#see-more .content .content-text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section#see-more .content .content-text p{
+    font-size: 1.4rem;
+    color: #EFEDE8;
+}
+
+section#see-more .content .content-text a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    color: #C21E6F;
+    font-weight: 600;
+
+    width: fit-content;
+}
+
+/* ----------- SECTION CONTACT ----------------*/
+section#contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#contact .content .content-text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section#contact .content .content-text form input {
+    width: 50%;
+    height: 5rem;
+    padding-left: 2rem;
+
+    border: none;
+    border-radius: 1rem;
+}
+
+section#contact .content .content-text form button {
+    width: 40%;
+    height: 5rem;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+/* ----------- SECTION LOCALIZATION ----------------*/
+footer {
+    width: 100%;
+    padding: 7rem;
+}
+footer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .content .content-text label {
+    display: flex;
+    align-items: center;
+
+    color: #EFEDE8;
+    margin-bottom: 1rem;
+}
+
+footer .content .content-text p {
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
 }
